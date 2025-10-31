@@ -57,7 +57,7 @@ Then open http://localhost:3000
 The ConnectButton component manages all wallet interactions.
 
 Example:
-
+```bash
 import ConnectButton from "@/components/ConnectButton";
 
 export default function Home() {
@@ -67,7 +67,7 @@ export default function Home() {
     </main>
   );
 }
-
+```
 
 This component will:
 
@@ -118,7 +118,7 @@ JSX + ES Modules	Component system
 
 🧑‍💻 Author
 
-Developed by: ABSheikh
+Developed by: Aminu Babayo Shehu (ABSheikh)
 
 💼 Software Engineer | Web3 & Full-Stack Developer
 
