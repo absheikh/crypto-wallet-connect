@@ -100,11 +100,12 @@ Wallet interactions occur only through the user’s chosen provider (e.g., MetaM
 No backend or sensitive data handling is required.
 
 📦 Tech Stack
+
 Technology	Purpose
 Next.js	Framework
 React	UI rendering
 CSS Modules	Styling
-MetaMask / EVM	Wallet provider
+Reown Wagmi MetaMask / EVM	Wallet provider
 JSX + ES Modules	Component system
 🧰 Future Enhancements
 
