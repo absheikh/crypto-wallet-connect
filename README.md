@@ -105,17 +105,9 @@ Technology	Purpose
 Next.js	Framework
 React	UI rendering
 CSS Modules	Styling
-Reown Wagmi MetaMask / EVM	Wallet provider
+MetaMask / EVM	Wallet provider
 JSX + ES Modules	Component system
-🧰 Future Enhancements
 
- Add WalletConnect and Coinbase Wallet support
-
- Integrate with wagmi and viem
-
- ENS name resolution
-
- Light/Dark theme toggle
 
 🧑‍💻 Author
 
