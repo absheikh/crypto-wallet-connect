@@ -1,0 +1,245 @@
+/* components/ConnectButton.module.css */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  width: 100%;
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 18px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 30px rgba(9, 12, 20, 0.45);
+  gap: 18px;
+  color: #e9eef8;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex: 1 1 60%;
+  min-width: 0;
+}
+
+.logoWrap {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: inset 0 -8px 18px rgba(255,255,255,0.02);
+}
+
+.walletIcon {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+  background: radial-gradient(circle at 30% 30%, rgba(99,102,241,0.14), rgba(99,102,241,0));
+  filter: blur(6px);
+  animation: pulse 2.8s infinite;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.9; }
+  50% { transform: scale(1.06); opacity: 0.55; }
+  100% { transform: scale(0.95); opacity: 0.9; }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #c9d7f7;
+  font-size: 13px;
+  line-height: 1.2;
+  max-width: 360px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 240px;
+}
+
+.connectBtn {
+  position: relative;
+  overflow: visible;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #7c5cff, #4ad1ff);
+  color: #06121b;
+  font-weight: 700;
+  box-shadow: 0 8px 26px rgba(76, 74, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transform: translateZ(0);
+}
+
+.connectBtn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.btnGlow {
+  position: absolute;
+  left: -34%;
+  top: -34%;
+  width: 160%;
+  height: 160%;
+  filter: blur(24px);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.btnText {
+  position: relative;
+  z-index: 2;
+}
+
+.hint {
+  font-size: 12px;
+  color: #adc6ff;
+  opacity: 0.9;
+  margin-top: 6px;
+  text-align: right;
+  max-width: 280px;
+}
+
+/* when connected */
+.addressRow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.addrInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.identicon {
+  min-width: 84px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 13px;
+  padding: 8px;
+  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.addrLabel {
+  font-weight: 700;
+  color: #fff;
+}
+
+.chainLabel {
+  font-size: 12px;
+  color: #a7c0ff;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.smallBtn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #eaf2ff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ghostBtn {
+  background: transparent;
+  color: #c9d7f7;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 600;
+  text-decoration: underline;
+  opacity: 0.95;
+}
+
+.error {
+  color: #ffccd5;
+  background: rgba(255, 51, 85, 0.06);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 4px;
+  width: 100%;
+  text-align: right;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #bcd3ff;
+  font-size: 13px;
+}
+
+.sparkle { font-size: 16px; }
+
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .right { align-items: stretch; }
+  .hint { text-align: left; }
+}
