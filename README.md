@@ -33,8 +33,9 @@ styles/
 README.md
 
 💻 Setup & Installation
+
 1️⃣ Clone the repository
-git clone https://github.com/yourusername/crypto-wallet-connect-ui.git
+git clone https://github.com/absheikh/crypto-wallet-connect.git
 cd crypto-wallet-connect-ui
 
 2️⃣ Install dependencies
